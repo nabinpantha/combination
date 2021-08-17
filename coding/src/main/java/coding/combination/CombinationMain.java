@@ -1,5 +1,6 @@
 package coding.combination;
 
+import java.util.Scanner;
 import java.util.Set;
 
 import coding.combination.util.Combination;
@@ -7,8 +8,12 @@ import coding.combination.util.Combination;
 class CombinationMain {
 
 	public static void main(String[] args) {
-
-		String word = "working";
+		
+		 Scanner input = new Scanner(System.in);
+		 
+		 System.out.print("Enter the string: ");
+		 String word = input.nextLine();
+		 input.close();
 
 		Set<String> combinationList = Combination.findCombination(word);
 
